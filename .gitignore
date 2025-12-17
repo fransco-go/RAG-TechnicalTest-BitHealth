@@ -1,0 +1,13 @@
+# virtual environment
+venv/
+.env/
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+# logs & temp files
+*.log
+tmp/    
+# IDE / editor settings
+.vscode/
+.idea/
