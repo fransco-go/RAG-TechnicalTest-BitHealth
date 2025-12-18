@@ -4,7 +4,6 @@ This repository contains a refactored implementation of a simple
 **Retrieval-Augmented Generation (RAG)** service built with **FastAPI**,
 a LangGraph-style workflow, and **Qdrant with an in-memory fallback**.
 
----
 
 ## Key Features
 
