@@ -14,9 +14,6 @@ workflow = RagWorkflow(store)
 class QuestionRequest(BaseModel):
     question: str
 
-class DocumentRequest(BaseModel):
-    text: str
-
 @router.post("/ask")
 def ask_question(req: QuestionRequest):
     start = time.time()
@@ -31,6 +28,9 @@ def ask_question(req: QuestionRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+class DocumentRequest(BaseModel):
+    text: str
+    
 @router.post("/add")
 def add_document(req: DocumentRequest):
     try:
